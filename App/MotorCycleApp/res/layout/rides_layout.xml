@@ -1,0 +1,55 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context="pc.motorcycle.androidapp.AndroidActivites.EventActivity" >
+
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:divider="@android:color/transparent"
+        android:layout_weight="1"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:background="@drawable/buttonbackground">
+
+        <Button
+            android:id="@+id/btnEvents"
+            android:background="@drawable/eventsbutton"
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            />
+
+        <Button
+            android:id="@+id/btnSettings"
+            android:background="@drawable/optionsbutton"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_alignBottom="@+id/btnEvents"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/btnRide"
+            android:background="@drawable/ridesbutton"
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            />
+
+    </RelativeLayout>
+</FrameLayout>
+
+

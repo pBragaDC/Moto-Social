@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:textSize="18dp"
+        android:text="(title)"
+        android:id="@+id/tit"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:layout_alignParentTop="true"
+        android:paddingTop="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/listviewtitlebar"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="true"/>
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_below="@+id/tit"
+        android:src="@drawable/harley_logo"/>
+
+    <TextView
+        android:id="@+id/date1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:layout_below="@+id/img"
+        android:text="(date)"
+        android:inputType="textMultiLine"
+        android:textColor="#FFFFFF">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img"
+        android:paddingLeft="10dp"
+        android:layout_toRightOf="@+id/date1"
+        android:text="(time)"
+        android:inputType="textMultiLine"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:id="@+id/locn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:layout_below="@+id/date1"
+        android:text="(locNumb)"
+        android:inputType="textMultiLine"
+        android:textColor="#FFFFFF"/>
+
+
+    <TextView
+        android:id="@+id/stret"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:layout_toRightOf="@+id/locn"
+        android:layout_below="@+id/date1"
+        android:text="(street)"
+        android:inputType="textMultiLine"
+        android:textColor="#FFFFFF"/>
+
+
+    <TextView
+        android:id="@+id/cit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:layout_below="@+id/locn"
+        android:text="(city)"
+        android:inputType="textMultiLine"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:id="@+id/stat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:layout_toRightOf="@+id/cit"
+        android:layout_below="@+id/locn"
+        android:text="(state)"
+        android:inputType="textMultiLine"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:id="@+id/zipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:layout_toRightOf="@+id/stat"
+        android:layout_below="@+id/locn"
+        android:text="(zip)"
+        android:inputType="textMultiLine"
+        android:textColor="#FFFFFF"/>
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:layout_below="@+id/cit"
+        android:inputType="textMultiLine"
+        android:text="(desc)"
+        android:textColor="#FFFFFF"/>
+</RelativeLayout>
+

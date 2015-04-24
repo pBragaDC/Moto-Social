@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/listviewbackground">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:textSize="18dp"
+        android:text="(title)"
+        android:id="@+id/title"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:layout_alignParentTop="true"
+        android:paddingTop="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/listviewtitlebar"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="true"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:background="#FFFFFF"
+        android:id="@+id/imageView"
+        android:layout_below="@id/title"
+        android:src="@drawable/harley_logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imageView"
+        android:text="(date)"
+        android:id="@+id/date"
+        android:layout_below="@+id/title"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(hour)"
+        android:id="@+id/hour"
+        android:layout_alignTop="@+id/date"
+        android:layout_toRightOf="@+id/date"
+        android:layout_toEndOf="@+id/date"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(time)"
+        android:id="@+id/time"
+        android:layout_alignTop="@+id/hour"
+        android:layout_toRightOf="@+id/hour"
+        android:layout_toEndOf="@+id/hour"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imageView"
+        android:text="(locNumb)"
+        android:id="@+id/locNumb"
+        android:paddingRight="1dp"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/date"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(street)"
+        android:id="@+id/street"
+        android:layout_alignTop="@+id/locNumb"
+        android:layout_toRightOf="@+id/locNumb"
+        android:layout_toEndOf="@+id/locNumb"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(city)"
+        android:id="@+id/city"
+        android:layout_below="@+id/locNumb"
+        android:layout_toRightOf="@+id/imageView"
+        android:paddingLeft="10dp"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(zip)"
+        android:paddingLeft="2dp"
+        android:id="@+id/zipcode"
+        android:layout_below="@+id/locNumb"
+        android:layout_toRightOf="@+id/city"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(state)"
+        android:id="@+id/state"
+        android:paddingLeft="2dp"
+        android:layout_below="@+id/locNumb"
+        android:layout_toRightOf="@+id/zipcode"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="200sp"
+        android:layout_height="35sp"
+        android:layout_below="@+id/zipcode"
+        android:layout_toRightOf="@+id/imageView"
+        android:paddingLeft="10dp"
+        android:text="(description)"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>
